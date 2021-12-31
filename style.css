@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto Mono", monospace;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background: rgb(48, 48, 48);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.container > h2 {
+  /* position: absolute;
+  top: 20%; */
+  font-size: 34px;
+  letter-spacing: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+.container > p {
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-align: center;
+}
+#count {
+  display: flex;
+  margin-top: 6rem;
+}
+#count div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0 2rem;
+  font-size: 35px;
+  border-bottom: 5px solid rgba(255, 255, 255, 0.5);
+}
+#count div::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  /* height: 40px; */
+  top: -40px;
+  left: 0;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  letter-spacing: 5px;
+
+  /* background-color: rgba(255, 255, 255, 0.1); */
+}
+#count div#day::before {
+  content: "Day";
+}
+#count div#hour::before {
+  content: "Hour";
+}
+#count div#minute::before {
+  content: "Minute";
+}
+#count div#second::before {
+  content: "Second";
+}
+
+.text-glow {
+  text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+    }
+    .container > h2 {
+        font-size: 18px;
+    }
+    
+    .container > p {
+        font-size: 8px;
+    }
+    #count {
+        margin-top: 4rem;
+    }
+    #count div {
+        width: 40px;
+        height: 40px;
+        margin: 0 1.4rem;
+        font-size: 20px;
+    }
+    #count div::before {
+        font-size: 8px;
+        top: -20px;
+    }
+}
