@@ -29,8 +29,8 @@ body {
   text-align: center;
 }
 .container > p {
-    margin-top: 1.5rem;
-    padding: 0 1rem;
+  margin-top: 1.5rem;
+  padding: 0 1rem;
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 12px;
@@ -87,27 +87,30 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-    .container{
-        width: 100%;
-    }
-    .container > h2 {
-        font-size: 18px;
-    }
-    
-    .container > p {
-        font-size: 8px;
-    }
-    #count {
-        margin-top: 4rem;
-    }
-    #count div {
-        width: 40px;
-        height: 40px;
-        margin: 0 1.4rem;
-        font-size: 20px;
-    }
-    #count div::before {
-        font-size: 8px;
-        top: -20px;
-    }
+  .container {
+    width: 100%;
+  }
+  .container > h2 {
+    font-size: 18px;
+  }
+
+  .container > p {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  #count {
+    margin-top: 4rem;
+  }
+  #count div {
+    width: 40px;
+    height: 40px;
+    margin: 0 1.4rem;
+    font-size: 20px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  }
+  #count div::before {
+    font-size: 8px;
+    top: -20px;
+    letter-spacing: 1px;
+  }
 }
